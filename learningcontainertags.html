@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Learning HTML Container Tags</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			font-family: Arial;
+			padding: 10px;
+			background: #f1f1f1;
+
+		}
+		.header {
+			padding: 30px;
+			text-align: center;
+			background: green;
+		}
+		.header h1 {
+			font-size: 50px;
+			color: floralwhite;
+		}
+		.header p {
+			color: floralwhite;
+		}
+		.topnav {
+			overflow: hidden;
+			background-color: darkgray;
+		}
+		.topnav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		.topnav a:hover {
+			background-color: lightgray;
+			color: black;
+		}
+		.leftcolumn {
+			float: left;
+			width: 75%;
+		}
+		.rightcolumn {
+			float: right;
+			width: 25%;
+			background-color: #f1f1f1;
+			padding-left: 20px;
+		}
+		.img {
+			
+			padding-bottom: 10px;
+		}
+		.card {
+			background-color: white;
+			padding: 20px;
+			margin-top: 20px;
+		}
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.footer {
+			padding: 20px;
+			text-align: center;
+			background: lightcoral;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Pakistan</h1>
+		<p>This is a sample website to learn html/css container tags.</p>
+	</div>
+
+	<div class="topnav">
+		<a href="#">Link1</a>
+		<a href="#">Link2</a>
+		<a href="#">Link3</a>
+		<a href="#">Link4</a>
+		<a href="#" style="float: right;">Link5</a>
+	</div>
+
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+				<h2>Islamabad</h2>
+				<h6>The capital of Pakistan</h6>
+				<div class="img">
+					<img src="isb.jpeg" width="300px" height="150px">
+				</div>
+				<p>Islamabad is the capital city of Pakistan, and is administered by the Pakistani federal government as part of the Islamabad Capital Territory. It is the ninth-largest city in Pakistan, while the larger Islamabad–Rawalpindi metropolitan area is the country's third-largest with a population of about 4.1 million people. Built as a planned ci1`ty in the 1960s to replace Karachi as Pakistan's capital, Islamabad is noted for its high standards of living, safety, and abundant greenery.</p>
+			</div>
+			<div class="card">
+				<h2>Karachi</h2>
+				<h6>The capital of Sindh</h6>
+				<div class="img">
+					<img src="khi.jpeg" width="300px" height="150px">
+				</div>
+				<p>Karachi is the largest city in Pakistan and the twelfth-largest city in the world. It is the capital of the Pakistani province of Sindh. Ranked as a beta-global city, it is Pakistan's premier industrial and financial centre, with an estimated GDP of $164 billion (PPP) as of 2019.[13][14] Karachi is Pakistan's most cosmopolitan city, linguistically, ethnically, and religiously diverse, as well as one of Pakistan's most secular and socially liberal cities. With its location on the Arabian Sea, Karachi serves as a transport hub, and is home to Pakistan's two largest seaports, the Port of Karachi and Port Bin Qasim, as well as Pakistan's busiest airport, the Jinnah International Airport. </p>
+			</div>
+			<div class="card">
+				<h2>Lahore</h2>
+				<h6>The capital of Punjab</h6>
+				<div class="img">
+					<img src="lhr.jpeg" width="300px" height="150px">
+				</div>
+				<p>Lahore is the capital of the Pakistani province of Punjab and is the country's 2nd largest city after Karachi, as well as the 26th largest city in the world.Lahore is one of Pakistan's wealthiest cities with an estimated GDP (PPP) of $84 billion as of 2019. It is the largest city and historic cultural centre of the wider Punjab region, and is one of Pakistan's most socially liberal, progressive, and cosmopolitan cities. </p>
+			</div>
+			
+		</div>
+
+		<div class="rightcolumn">
+			<div class="card">
+				<h2>About Me</h2>
+				<div class="img" style="width:100px; height:100px">My Photo</div>
+				<p>I am learning web development and this is my sample website.</p>
+			</div>
+			<div class="card">
+				<h2>References</h2>
+				<a href="https://en.wikipedia.org/wiki/Pakistan">Wikipedia Page on Pakistan</a>
+				<a href="https://en.wikipedia.org/wiki/Islamabad">Wikipedia Page on Islamabad</a>
+				<a href="https://en.wikipedia.org/wiki/Karachi">Wikipedia Page on Karachi</a>
+				<a href="https://en.wikipedia.org/wiki/Lahore">Wikipedia Page on Lahore</a>
+			</div>
+			<div class="card">
+				<h2>Follow Me</h2>
+				<p style="color: darkblue; text-decoration:underline;">Instagram</p>
+				<p style="color: darkblue; text-decoration:underline;">Facebook</p>
+			</div>
+			
+		</div>
+		
+	</div>
+
+	<div class="footer">
+		<h3>Website Footer</h3>
+		<p>The website footer is the section of content at the very bottom of a web page. It typically contains a copyright notice, link to a privacy policy, sitemap, logo, contact information, social media icons, and an email sign-up form. In short, a footer contains information that improves a website’s overall usability.</p>
+	</div>
+
+
+</body>
+</html>
